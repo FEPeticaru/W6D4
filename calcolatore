@@ -1,0 +1,24 @@
+import math
+print ("Benvenuto! questo programma ti permette di calcolare l'area di diverse figure geometriche!")
+print ("Scegli quale figura vuoi calcolare")
+print ("A per il quadrato, B per il triangolo o C per il cerchio")
+select = input ("Inserisci la selezione:")
+if select == 'a' or select == 'A':
+        l= int (input ("inserisci la lunghezza del lato:"))
+        area = l*4
+        print ("l'area del quadrato e' di:")
+        print (area)
+elif select == 'b' or select == 'B':
+        b = int (input ("inserisci la dimensione della base:"))
+        h = int (input ("inserisci l'altezza:"))
+        areat = b*h/2
+        print ("l'area del triangolo e' di:")
+        print (areat)
+elif select == 'c' or select == 'C':
+        r = int (input  ("inserisci la dimensione del raggio:"))
+        r2 = r**2
+        areac = math.pi * r2
+        print ("l'area del cerchio e' di:")
+        print (areac)
+else: 
+        print ("selezione non riconosciuta riprova!")
